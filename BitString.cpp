@@ -7,7 +7,7 @@ ll power(ll base, ll exp, ll mod) {
     ll result = 1;
     while (exp > 0) {
         if (exp % 2 == 1) {
-            result = (result * base) % mod;  // Prevent overflow
+            result = (result * base) % mod;  
         }
         base = (base * base) % mod;
         exp /= 2;
